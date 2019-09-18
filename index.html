@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box">
+      <input type="text" v-model="name" />
+      <input type="text" v-model="asd.title" >
+      <div>{{name}}</div>
+      <div>{{asd.title}}</div>
+    </div>
+    <script src="./mvvm.js"></script>
+    <script>
+      let res = new Mvvm({
+        el: "box",
+        data: {
+          name: "name",
+          asd:{
+            title: "标题"
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
